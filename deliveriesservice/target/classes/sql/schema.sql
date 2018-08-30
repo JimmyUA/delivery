@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS clients;
+CREATE TABLE clients (
+  id       INTEGER NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (id)
+);
