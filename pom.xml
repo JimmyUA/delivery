@@ -12,7 +12,9 @@
     <modules>
 
         <module>configservice</module>
-        <module>deliveryservice</module>
+        <module>discoveryservice</module>
+        <module>deliveriesservice</module>
+        <module>marketservice</module>
     </modules>
 
 </project>

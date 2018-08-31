@@ -1,5 +1,6 @@
 package clients.controller;
 
+import clients.apis.DeliveriesClient;
 import clients.persistance.Client;
 import clients.persistance.ClientsRepository;
 import org.slf4j.Logger;
@@ -16,7 +17,10 @@ public class ClientsController {
     private static final Logger LOGGER = LoggerFactory.getLogger(ClientsController.class);
 
     @Autowired
-    ClientsRepository repository;
+    private ClientsRepository repository;
+
+    @Autowired
+    private DeliveriesClient deliveriesClient;
 
     @PostMapping
     public Client add(@RequestBody Client client) {
@@ -30,10 +34,22 @@ public class ClientsController {
         return repository.findById(id);
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public List findAll() {
         LOGGER.info("Employee find");
         return repository.findAll();
+    }
+
+    @GetMapping("client/{id}/withDeliveries")
+    public Client findByIdWithDeliveries(@PathVariable("id") Long id) {
+        LOGGER.info("Employee find with deliveries: id={}", id);
+        Optional<Client> client = repository.findById(id);
+        if (!client.isPresent()){
+            throw new RuntimeException("Client is not found");
+        }
+        Client clientInstance = client.get();
+        clientInstance.setDeliveries(deliveriesClient.findDeliveriesByClient(id));
+        return clientInstance;
     }
 
 

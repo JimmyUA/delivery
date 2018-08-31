@@ -1,5 +1,6 @@
-DROP TABLE IF EXISTS clients;
-CREATE TABLE clients (
+DROP TABLE IF EXISTS delivery;
+CREATE TABLE delivery (
   id       INTEGER NOT NULL AUTO_INCREMENT,
+  client_id INTEGER NOT NULL,
   PRIMARY KEY (id)
 );

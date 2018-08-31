@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="clientservice" />
+        <module name="configservice" />
+        <module name="deliveriesservice" />
+        <module name="discoveryservice" />
+        <module name="marketservice" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="clientservice" target="1.8" />
+      <module name="comsergeyprykhodko" target="1.5" />
+      <module name="configservice" target="1.5" />
+      <module name="deliveriesservice" target="1.8" />
+      <module name="delivery" target="1.5" />
+      <module name="deliveryservice" target="1.8" />
+      <module name="discoveryservice" target="1.5" />
+      <module name="marketservice" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
