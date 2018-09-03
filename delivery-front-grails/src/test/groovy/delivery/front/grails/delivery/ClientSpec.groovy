@@ -1,4 +1,4 @@
-package delivery.front.grails
+package delivery.front.grails.delivery
 
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification

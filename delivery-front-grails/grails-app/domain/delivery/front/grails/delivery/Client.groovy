@@ -1,4 +1,5 @@
-package delivery.front.grails
+package delivery.front.grails.delivery
+
 
 class Client {
 
