@@ -1,4 +1,4 @@
-package delivery.front
+package delivery.front.grails
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration

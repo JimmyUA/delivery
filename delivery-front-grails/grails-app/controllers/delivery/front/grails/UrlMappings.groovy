@@ -1,4 +1,4 @@
-package delivery.front
+package delivery.front.grails
 
 class UrlMappings {
 

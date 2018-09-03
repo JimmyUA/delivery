@@ -11,7 +11,7 @@ buildscript {
 }
 
 version "0.1"
-group "delivery.front"
+group "delivery.front.grails"
 
 apply plugin:"eclipse"
 apply plugin:"idea"
