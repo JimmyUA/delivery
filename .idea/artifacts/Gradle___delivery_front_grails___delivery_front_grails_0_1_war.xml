@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : delivery.front.grails : delivery-front-grails-0.1.war">
+    <output-path>$PROJECT_DIR$/delivery-front-grails/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/delivery-front-grails" />
+    </properties>
+    <root id="archive" name="delivery-front-grails-0.1.war">
+      <element id="artifact" artifact-name="Gradle : delivery.front.grails : delivery-front-grails-0.1.war (exploded)" />
+    </root>
+  </artifact>
+</component>

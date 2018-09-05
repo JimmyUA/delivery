@@ -6,6 +6,11 @@
       <module fileurl="file://$PROJECT_DIR$/configservice/configservice.iml" filepath="$PROJECT_DIR$/configservice/configservice.iml" group="delivery" />
       <module fileurl="file://$PROJECT_DIR$/deliveriesservice/deliveriesservice.iml" filepath="$PROJECT_DIR$/deliveriesservice/deliveriesservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/delivery.iml" filepath="$PROJECT_DIR$/.idea/delivery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/delivery-front-grails/delivery-front-grails.iml" filepath="$PROJECT_DIR$/delivery-front-grails/delivery-front-grails.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/delivery-front-grails_integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/delivery-front-grails_integrationTest.iml" group="delivery-front-grails" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/delivery-front-grails_main.iml" filepath="$PROJECT_DIR$/.idea/modules/delivery-front-grails_main.iml" group="delivery-front-grails" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/delivery-front-grails_test.iml" filepath="$PROJECT_DIR$/.idea/modules/delivery-front-grails_test.iml" group="delivery-front-grails" />
+      <module fileurl="file://$PROJECT_DIR$/delivry-front-angular/delivry-front-angular.iml" filepath="$PROJECT_DIR$/delivry-front-angular/delivry-front-angular.iml" />
       <module fileurl="file://$PROJECT_DIR$/discoveryservice/discoveryservice.iml" filepath="$PROJECT_DIR$/discoveryservice/discoveryservice.iml" group="delivery" />
       <module fileurl="file://$PROJECT_DIR$/marketservice/marketservice.iml" filepath="$PROJECT_DIR$/marketservice/marketservice.iml" />
     </modules>

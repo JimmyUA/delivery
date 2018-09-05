@@ -19,6 +19,10 @@
       <module name="configservice" target="1.5" />
       <module name="deliveriesservice" target="1.8" />
       <module name="delivery" target="1.5" />
+      <module name="delivery-front-grails_integrationTest" target="1.8" />
+      <module name="delivery-front-grails_main" target="1.8" />
+      <module name="delivery-front-grails_test" target="1.8" />
+      <module name="deliveryfrontwicket" target="1.8" />
       <module name="deliveryservice" target="1.8" />
       <module name="discoveryservice" target="1.5" />
       <module name="marketservice" target="1.8" />
