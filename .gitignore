@@ -40,6 +40,7 @@ cmake-build-*/
 
 # IntelliJ
 out/
+target/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
@@ -58,3 +59,28 @@ fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
