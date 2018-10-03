@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,20 +28,20 @@ public class ClientsController {
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     @PostMapping("/add")
-    public Client add(@RequestBody Client client) {
-        LOGGER.info("Employee add: {}", client);
-        return repository.save(client);
+    public ResponseEntity add(@RequestBody Client client) {
+        LOGGER.info("Client add: {}", client);
+        return ResponseEntity.ok().body(repository.save(client));
     }
 
     @GetMapping("/{id}")
     public Optional<Client> findById(@PathVariable("id") Long id) {
-        LOGGER.info("Employee find: id={}", id);
+        LOGGER.info("Client find: id={}", id);
         return repository.findById(id);
     }
 
     @GetMapping("/all")
     public List findAll() {
-        LOGGER.info("Employee find");
+        LOGGER.info("Client find");
         return repository.findAll();
     }
 
