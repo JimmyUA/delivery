@@ -3,6 +3,10 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/angular-front/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/angular-front/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/delivery-front-ang/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/delivery-front-ang/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/dist" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
