@@ -1,16 +1,18 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {RequestOptions} from "@angular/http";
+import {UiService} from './services/ui/ui.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'Zakupayko';
+  showMenu = false;
+  darkModeActive: boolean;
 
-  constructor(private http: HttpClient){
+  constructor(private http: HttpClient, public ui: UiService) {
   }
 
   ngOnInit(): void {
@@ -25,5 +27,17 @@ export class AppComponent implements OnInit{
     this.http.get('http://localhost:8090/all').subscribe(data => {
       console.log(data);
     });
+
+    this.ui.darkModeState.subscribe((value) => {
+      this.darkModeActive = value;
+    });
+  }
+
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
+  }
+
+  modeToggleSwitch() {
+    this.ui.darkModeState.next(!this.darkModeActive);
   }
 }

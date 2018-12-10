@@ -16,6 +16,7 @@
         <module>deliveriesservice</module>
         <module>marketservice</module>
         <module>deliveryfrontwicket</module>
+        <module>gatewayservice</module>
     </modules>
 
 </project>
